@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import BlankComponent from './BlankComponent';
+import ExperimentList from './ExperimentList';
+import { experiments } from './experiments';
 import { render } from '@testing-library/react';
 
 class App extends Component {
@@ -14,10 +16,11 @@ class App extends Component {
 
     render() {
       return (
-        <div>
+        <div className="tc">
             <h1> OptiQit </h1>
             <p> Add content</p>
             <BlankComponent />
+            <ExperimentList experiments = {experiments} />
         </div>
     )
     }
