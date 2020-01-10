@@ -7,8 +7,15 @@ import "tachyons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "mdbreact/dist/css/mdb.css";
+import { Switch, HashRouter, Route, Link } from "react-router-dom";
 
 ReactDOM.render(<App />, document.getElementById("root"));
+
+const Experiment = () => (
+  <Switch>
+    <Route exact path="/experiment" component={Experiment} />
+  </Switch>
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
