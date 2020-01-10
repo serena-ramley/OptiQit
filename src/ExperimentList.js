@@ -5,7 +5,6 @@ import { Nav, Col, Row, Image } from "react-bootstrap";
 
 class ExperimentList extends React.Component {
   render() {
-    function handleClick(e) {}
     return (
       <MDBContainer className="d-flex justify-content-around">
         <MDBRow>
