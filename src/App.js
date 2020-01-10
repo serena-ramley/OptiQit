@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import BlankComponent from './BlankComponent';
 import ExperimentList from './ExperimentList';
+import ErrorBoundary from './ErrorBoundary';
 import { experiments } from './experiments';
 import { render } from '@testing-library/react';
 
@@ -20,7 +21,9 @@ class App extends Component {
             <h1> OptiQit </h1>
             <p> Add content</p>
             <BlankComponent />
-            <ExperimentList experiments = {experiments} />
+            <ErrorBoundary>
+              <ExperimentList experiments = {experiments} />
+            </ErrorBoundary>
         </div>
     )
     }
