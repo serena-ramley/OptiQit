@@ -2,6 +2,9 @@ import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import ExperimentIcon from "./ExperimentIcon";
 import { Nav, Col, Row, Image } from "react-bootstrap";
+import ExperimentA from "./beamsplitter.png";
+import ExperimentB from "./twoslit.jpg";
+import ExperimentC from "./twoslitphotons.png";
 
 class ExperimentList extends React.Component {
   render() {
@@ -13,7 +16,7 @@ class ExperimentList extends React.Component {
               <Nav.Link href="/experiment">
                 <MDBView hover>
                   <img
-                    src="https://cdn.arstechnica.net/wp-content/uploads/2016/10/slide-1-800x401.jpg"
+                    src={ExperimentA}
                     className="img-fluid rounded-circle hoverable"
                     alt=""
                   />
@@ -30,7 +33,7 @@ class ExperimentList extends React.Component {
           <MDBCol md="4">
             <MDBView hover>
               <img
-                src="https://cdn.arstechnica.net/wp-content/uploads/2016/10/slide-1-800x401.jpg"
+                src={ExperimentB}
                 className="img-fluid rounded-circle hoverable"
                 alt=""
               />
@@ -45,7 +48,7 @@ class ExperimentList extends React.Component {
           <MDBCol>
             <MDBView hover>
               <img
-                src="https://cdn.arstechnica.net/wp-content/uploads/2016/10/slide-1-800x401.jpg"
+                src={ExperimentC}
                 className="img-fluid rounded-circle hoverable"
                 alt=""
               />
