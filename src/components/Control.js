@@ -33,20 +33,35 @@ export class Control extends Component {
 
   BLEConnect() {
     return navigator.bluetooth
-      .requestDevice({ filters: [{ services: [0xffb0] }] })
+      .requestDevice({
+        filters: [
+          {
+            services: ["4fafc201-1fb5-459e-8fcc-c5c9c331914b"]
+          }
+        ]
+      })
       .then(device => {
         return device.gatt.connect();
       })
-      .then(server => {
-        return server.getPrimaryService(0xffb0);
-      })
-      .then(service => {
-        return service.getCharacteristic(0xffb5);
-      })
-      .then(character => {
-        this.characteristic = character;
-      })
-      .catch(e => console.error(e));
+      .catch(error => {
+        console.log(error);
+      });
+    // navigator.bluetooth
+    //   .requestDevice({ filters: [{ services: [0xffb0] }] })
+    //   .then(device => {
+    //     return device.gatt.connect();
+    //   })
+    //   // .then(server => {
+    //   //   return server.getPrimaryService(0xffb0);
+    //   // })
+    //   // .then(service => {
+    //   //   return service.getCharacteristic(0xffb5);
+    //   // })
+    //   // .then(character => {
+    //   //   this.characteristic = character;
+    //   // })
+    //   .catch(e => console.error(e))
+    // );
   }
 
   render() {
