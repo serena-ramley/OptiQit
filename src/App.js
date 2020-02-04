@@ -26,7 +26,9 @@ class App extends Component {
           <div>
             <Switch>
               <Route exact path="/" component={ExperimentList} />
-              <Route path="/experiment" component={Experiment} />
+              <Route path="/experimentA" component={Experiment} />
+              <Route path="/experimentB" component={Experiment} />
+              <Route path="/experimentC" component={Experiment} />
             </Switch>
           </div>
         </BrowserRouter>
