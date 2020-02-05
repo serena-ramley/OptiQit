@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import ExperimentList from "./components/experiments/ExperimentList";
 import { Experiment } from "./components/experiments/Experiment";
-import { render } from "@testing-library/react";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   constructor() {

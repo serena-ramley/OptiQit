@@ -1,7 +1,6 @@
 import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
-import ExperimentIcon from "./ExperimentIcon";
-import { Nav, Col, Row, Image } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import ExperimentA from "../../images/beamsplitter.png";
 import ExperimentB from "../../images/twoslit.jpg";
 import ExperimentC from "../../images/twoslitphotons.png";
