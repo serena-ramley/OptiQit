@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
-import { Nav } from "react-bootstrap";
+import ExperimentIcon from "./ExperimentIcon";
+import { Nav, Col, Row, Image } from "react-bootstrap";
 import ExperimentA from "../../images/beamsplitter.png";
 import ExperimentB from "../../images/twoslit.jpg";
 import ExperimentC from "../../images/twoslitphotons.png";
@@ -12,7 +13,7 @@ class ExperimentList extends React.Component {
         <MDBRow>
           <MDBCol md="4">
             <Nav>
-              <Nav.Link href="/experiment">
+              <Nav.Link href="/experimentA">
                 <MDBView hover>
                   <img
                     src={ExperimentA}
@@ -29,35 +30,45 @@ class ExperimentList extends React.Component {
               </Nav.Link>
             </Nav>
           </MDBCol>
+          
           <MDBCol md="4">
-            <MDBView hover>
-              <img
-                src={ExperimentB}
-                className="img-fluid rounded-circle hoverable"
-                alt=""
-              />
-              <MDBMask
-                className="flex-center rounded-circle"
-                overlay="red-strong"
-              >
-                <p className="white-text">Experiment B</p>
-              </MDBMask>
-            </MDBView>
+            <Nav>
+              <Nav.Link href=" /experimentB">
+                <MDBView hover>
+                  <img
+                    src={ExperimentB}
+                    className="img-fluid rounded-circle hoverable"
+                    alt=""
+                  />
+                  <MDBMask
+                    className="flex-center rounded-circle"
+                    overlay="red-strong"
+                  >
+                    <p className="white-text">Experiment B</p>
+                  </MDBMask>
+                </MDBView>
+              </Nav.Link>
+            </Nav>
+
           </MDBCol>
           <MDBCol>
-            <MDBView hover>
-              <img
-                src={ExperimentC}
-                className="img-fluid rounded-circle hoverable"
-                alt=""
-              />
-              <MDBMask
-                className="rounded-circle flex-center"
-                overlay="red-strong"
-              >
-                <p className="white-text">Experiment C</p>
-              </MDBMask>
-            </MDBView>
+            <Nav>
+              <Nav.Link href=" /experimentC">
+                <MDBView hover>
+                  <img
+                    src={ExperimentC}
+                    className="img-fluid rounded-circle hoverable"
+                    alt=""
+                  />
+                  <MDBMask
+                    className="rounded-circle flex-center"
+                    overlay="red-strong"
+                  >
+                    <p className="white-text">Experiment C</p>
+                  </MDBMask>
+                </MDBView>
+              </Nav.Link>
+            </Nav>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
