@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Button } from "reactstrap";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 
-import { Nav, Navbar } from "react-bootstrap";
-
 var myCharacteristic;
 
 export class Control extends Component {
@@ -16,31 +14,37 @@ export class Control extends Component {
 
   onStopButtonClick() {
     if (myCharacteristic) {
-      myCharacteristic.stopNotifications()
-      .then(_ => {
-        console.log('> Notifications stopped');
-        myCharacteristic.removeEventListener('characteristicvaluechanged',
-            this.handleNotifications);
-      })
-      .catch(error => {
-        console.log('Argh! ' + error);
-      });
+      myCharacteristic
+        .stopNotifications()
+        .then(_ => {
+          console.log("> Notifications stopped");
+          myCharacteristic.removeEventListener(
+            "characteristicvaluechanged",
+            this.handleNotifications
+          );
+        })
+        .catch(error => {
+          console.log("Argh! " + error);
+        });
     }
-  }  
+  }
 
   onStartButtonClick() {
     if (myCharacteristic) {
-      myCharacteristic.startNotifications()
-      .then(_ => {
-        console.log('> Notifications started');
-        myCharacteristic.addEventListener('characteristicvaluechanged',
-            this.handleNotifications);
-      })
-      .catch(error => {
-        console.log('Argh! ' + error);
-      });
+      myCharacteristic
+        .startNotifications()
+        .then(_ => {
+          console.log("> Notifications started");
+          myCharacteristic.addEventListener(
+            "characteristicvaluechanged",
+            this.handleNotifications
+          );
+        })
+        .catch(error => {
+          console.log("Argh! " + error);
+        });
     }
-  }  
+  }
 
   handleNotifications(event) {
     let value = event.target.value;
@@ -49,9 +53,19 @@ export class Control extends Component {
     // In the "real" world, you'd use data.getUint8, data.getUint16 or even
     // TextDecoder to process raw data bytes.
     for (let i = 0; i < value.byteLength; i++) {
-      a.push('0x' + ('00' + value.getUint8(i).toString(16)).slice(-2));
+      a.push("0x" + ("00" + value.getUint8(i).toString(16)).slice(-2));
     }
-    console.log('> ' + a.join(' '));
+    console.log("> " + a.join(" "));
+  }
+
+  callAPI() {
+    fetch("http://localhost:9000/testAPI")
+      .then(res => res.text())
+      .then(res => this.setState({ apiResponse: res }));
+  }
+
+  componentWillMount() {
+    this.callAPI();
   }
   // onChangeHandler(value) {
   //   const r = Number(value.rgb.r).toString(16);
@@ -98,26 +112,30 @@ export class Control extends Component {
       .requestDevice({
         filters: [
           {
-            name: 'OptiQit'
+            name: "OptiQit"
           }
         ],
-        optionalServices: ['4fafc201-1fb5-459e-8fcc-c5c9c331914b']
+        optionalServices: ["4fafc201-1fb5-459e-8fcc-c5c9c331914b"]
       })
       .then(device => {
         return device.gatt.connect();
-      }) 
+      })
       .then(server => {
         return server.getPrimaryService("4fafc201-1fb5-459e-8fcc-c5c9c331914b");
       })
       .then(service => {
-        return service.getCharacteristic("beb5483e-36e1-4688-b7f5-ea07361b26a8");
+        return service.getCharacteristic(
+          "beb5483e-36e1-4688-b7f5-ea07361b26a8"
+        );
       })
       .then(characteristic => {
         myCharacteristic = characteristic;
         return myCharacteristic.startNotifications().then(_ => {
-          console.log('> Notifications started');
-          myCharacteristic.addEventListener('characteristicvaluechanged',
-              this.handleNotifications);
+          console.log("> Notifications started");
+          myCharacteristic.addEventListener(
+            "characteristicvaluechanged",
+            this.handleNotifications
+          );
         });
       })
       .catch(error => {
@@ -139,7 +157,7 @@ export class Control extends Component {
     //   // })
     //   .catch(e => console.error(e))
     // );
-    }
+  }
 
   render() {
     return (
