@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "mdbreact/dist/css/mdb.css";
-import { Switch, HashRouter, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
