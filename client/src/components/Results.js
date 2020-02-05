@@ -19,70 +19,74 @@ export const Results = () => (
       using Lorem Ipsum is that it has a more-or-less normal distribution of
       letters, as opposed to using 'Content here, content here', making it look
       like readable English. Lorem Ipsum is simply dummy text of the printing
-      and typesetting industry. 
+      and typesetting industry.
     </p>
   </div>
 );
-
-
 
 export const ResultsA = () => (
   <div>
     <h1 id="results">Results</h1>
     <p>
       {" "}
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-     BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA 
-
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA BlahA
+      BlahA BlahA BlahA BlahA BlahA BlahA
     </p>
   </div>
 );
-
 
 export const ResultsC = () => (
   <div>
     <h1 id="results">Results</h1>
     <p>
       {" "}
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
-     BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC 
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
+      BlahC BlahC BlahC BlahC
     </p>
   </div>
 );

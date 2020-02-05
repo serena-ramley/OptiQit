@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Button } from "reactstrap";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 
-import { Nav, Navbar } from "react-bootstrap";
-
 var myCharacteristic;
 
 export class Control extends Component {
