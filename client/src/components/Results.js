@@ -1,4 +1,5 @@
 import React from "react";
+import Chart from "./Chart.js";
 import { Nav, Navbar } from "react-bootstrap";
 
 export const Results = () => (
@@ -57,5 +58,6 @@ export const Results = () => (
       letters, as opposed to using 'Content here, content here', making it look
       like readable English.
     </p>
+    <Chart />
   </div>
 );
