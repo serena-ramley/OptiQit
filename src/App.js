@@ -10,6 +10,13 @@ import { Control } from "./components/Control";
 import { Results } from "./components/Results";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
+import { ExperimentA } from "./components/Experiment";
+import { ExperimentB } from "./components/Experiment";
+import { ExperimentC } from "./components/Experiment";
+
+
+
+
 class App extends Component {
   constructor() {
     super();
@@ -19,43 +26,22 @@ class App extends Component {
     };
   }
 
-  render() {
-    return (
-      <div>
-        <BrowserRouter>
-          <div>
-            <Switch>
-              <Route exact path="/" component={ExperimentList} />
-              <Route path="/experiment" component={Experiment} />
-            </Switch>
-          </div>
-        </BrowserRouter>
-      </div>
-    );
-  }
+render() {
+  return (
+    <div>
+      <BrowserRouter>
+        <div>
+          <Switch>
+            <Route exact path="/" component={ExperimentList} />
+            <Route path="/experimentA" component = {ExperimentA}/>
+            <Route path="/experimentB" component = {ExperimentB}/>
+            <Route path="/experimentC" component = {ExperimentC} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </div>
+  );
 }
-
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       experimentSelection: "",
-//       experimentStatus: ""
-//     };
-//   }
-
-//   render() {
-//     return (
-//       <React.Fragment>
-//         <NavigationBar />
-//         <p> Add content</p>
-//         <BlankComponent />
-//         <Instructions />
-//         <Control />
-//         <Results />
-//       </React.Fragment>
-//     );
-//   }
-// }
+}
 
 export default App;
