@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import Pusher from "pusher-js";
 import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from "victory";
 
-const API_URL = "http://localhost:9000/data/";
+const API_URL = "http://localhost:9000/";
+const GET = "GET"
 
 const BarChart = props => {
   return (
@@ -39,6 +40,8 @@ const BarChart = props => {
   );
 };
 
+
+
 class Chart extends React.Component {
   state = {
     data: [
@@ -61,16 +64,15 @@ class Chart extends React.Component {
     this.appInterval = setInterval(() => {
       this.setState({
         data: [
-          // { position: 1, count: Math.random() * 5 + 1 },
-          // { position: 2, count: Math.random() * 12.5 + 1 },
-          // { position: 3, count: Math.random() * 5 + 1 },
-          // { position: 4, count: Math.random() * 25 + 1 },
-          // { position: 5, count: Math.random() * 5 + 1 },
-          { position: 6, count: this.updateCount }
-          // { position: 7, count: Math.random() * 5 + 1 },
-          // { position: 8, count: Math.random() * 25 + 1 },
-          // { position: 9, count: Math.random() * 5 + 1 },
-          // { position: 10, count: Math.random() * 12.5 + 1 }
+          { position: 1, count: Math.random() * 5 + 1 },
+          { position: 2, count: Math.random() * 12.5 + 1 },
+          { position: 3, count: Math.random() * 5 + 1 },
+          { position: 4, count: Math.random() * 25 + 1 },
+          { position: 5, count: Math.random() * 5 + 1 },
+          { position: 6, count: this.updateCount(6) },
+          { position: 7, count: Math.random() * 5 + 1 },
+          { position: 8, count: Math.random() * 25 + 1 },
+          { position: 9, count: Math.random() * 5 + 1 },
         ]
       });
     }, 1000);
@@ -78,7 +80,30 @@ class Chart extends React.Component {
   }
 
   updateCount(e) {
-    this.setState({ count: (count += e.target.value) });
+    fetch(API_URL)
+    .then(response => response.json())
+    .then(data => {
+      var curCount
+      var nexCount
+
+      this.state.data.forEach(function(d) {
+        if(d.position == e) {
+          curCount = d.count
+          console.log(curCount)
+        }
+      })
+      
+      data.forEach(function(d) {
+        if(d.position == e) {
+          nexCount = d.count
+          console.log(nexCount)
+        }
+      })
+
+      console.log(this.state.data)
+         
+      this.setState({ count: (curCount += nexCount) });
+    });
   }
 
   componentDidMount() {
