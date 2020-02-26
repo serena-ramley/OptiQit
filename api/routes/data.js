@@ -20,7 +20,8 @@ function getRandomNumber(min, max) {
 
 function increment() {
   const num = getRandomNumber(0, data.length);
-  data[num].votes += 20;
+  
+  data.num.count += 20;
 }
 
 function updateCount() {
