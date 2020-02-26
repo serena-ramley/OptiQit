@@ -1,4 +1,5 @@
 import React from "react";
+import Chart from "./Chart.js";
 import { Nav, Navbar } from "react-bootstrap";
 
 export const Results = () => (
@@ -88,5 +89,6 @@ export const ResultsC = () => (
       BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC BlahC
       BlahC BlahC BlahC BlahC
     </p>
+    <Chart />
   </div>
 );
