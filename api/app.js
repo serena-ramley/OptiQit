@@ -5,7 +5,6 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var cors = require("cors");
 const bodyParser = require("body-parser");
-const Pusher = require("pusher");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
@@ -13,14 +12,6 @@ var usersRouter = require("./routes/users");
 var testAPIRouter = require("./routes/testAPI");
 
 var dataRouter = require("./routes/data");
-const pusher = new Pusher({
-  appId: "942546",
-  key: "7ad2d5c6d8c616c9e4f7",
-  secret: "e28dbba8658c7dbb9094",
-  cluster: "us3",
-  encrypted: true
-});
-const channel = "optiQit";
 
 var app = express();
 
@@ -40,7 +31,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/testAPI", testAPIRouter);
-app.use("/mongo", dbRouter);
+//app.use("/mongo", dbRouter);
 app.use("/data", dataRouter);
 
 // catch 404 and forward to error handler
