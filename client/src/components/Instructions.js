@@ -24,7 +24,6 @@ export const Instructions = () => (
   </div>
 );
 
-
 export const InstructionsA = () => (
   <div>
     <h1 id="ExperimentA">ExperimentA</h1>
@@ -50,15 +49,13 @@ export const InstructionsA = () => (
   </div>
 );
 
-
-
 export const InstructionsC = () => (
   <div>
     <h1 id="ExperimentC">ExperimentC</h1>
     <h2 id="instructions">Instructions</h2>
     <p>Testing InstructC </p>
     <p>
-      {" "}      
+      {" "}
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -76,5 +73,3 @@ export const InstructionsC = () => (
     </p>
   </div>
 );
-
-
