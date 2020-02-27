@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
 import ExperimentList from "./components/experiments/ExperimentList";
-import { Experiment } from "./components/experiments/Experiment";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+
+import { ExperimentA } from "./components/experiments/Experiment";
+import { ExperimentB } from "./components/experiments/Experiment";
+import { ExperimentC } from "./components/experiments/Experiment";
 
 class App extends Component {
   constructor() {
@@ -20,7 +23,9 @@ class App extends Component {
           <div>
             <Switch>
               <Route exact path="/" component={ExperimentList} />
-              <Route path="/experiment" component={Experiment} />
+              <Route path="/experimentA" component={ExperimentA} />
+              <Route path="/experimentB" component={ExperimentB} />
+              <Route path="/experimentC" component={ExperimentC} />
             </Switch>
           </div>
         </BrowserRouter>
@@ -28,28 +33,5 @@ class App extends Component {
     );
   }
 }
-
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       experimentSelection: "",
-//       experimentStatus: ""
-//     };
-//   }
-
-//   render() {
-//     return (
-//       <React.Fragment>
-//         <NavigationBar />
-//         <p> Add content</p>
-//         <BlankComponent />
-//         <Instructions />
-//         <Control />
-//         <Results />
-//       </React.Fragment>
-//     );
-//   }
-// }
 
 export default App;
