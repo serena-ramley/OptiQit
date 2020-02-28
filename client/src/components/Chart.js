@@ -64,15 +64,15 @@ class Chart extends React.Component {
     this.appInterval = setInterval(() => {
       this.setState({
         data: [
-          { position: 1, count: Math.random() * 5 + 1 },
-          { position: 2, count: Math.random() * 12.5 + 1 },
-          { position: 3, count: Math.random() * 5 + 1 },
-          { position: 4, count: Math.random() * 25 + 1 },
-          { position: 5, count: Math.random() * 5 + 1 },
+          { position: 1, count: this.updateCount(1) },
+          { position: 2, count: this.updateCount(2) },
+          { position: 3, count: this.updateCount(3) },
+          { position: 4, count: this.updateCount(4) },
+          { position: 5, count: this.updateCount(5) },
           { position: 6, count: this.updateCount(6) },
-          { position: 7, count: Math.random() * 5 + 1 },
-          { position: 8, count: Math.random() * 25 + 1 },
-          { position: 9, count: Math.random() * 5 + 1 },
+          { position: 7, count: this.updateCount(7) },
+          { position: 8, count: this.updateCount(8) },
+          { position: 9, count: this.updateCount(9) },
         ]
       });
     }, 1000);
@@ -83,16 +83,7 @@ class Chart extends React.Component {
     fetch(API_URL)
     .then(response => response.json())
     .then(data => {
-      var curCount
       var nexCount
-
-      this.state.data.forEach(function(d) {
-        if(d.position == e) {
-          curCount = d.count
-          console.log(curCount)
-        }
-      })
-      
       data.forEach(function(d) {
         if(d.position == e) {
           nexCount = d.count
@@ -100,9 +91,13 @@ class Chart extends React.Component {
         }
       })
 
-      console.log(this.state.data)
+      if (this.state.data[e-1].count == null || this.state.data[e-1].count > 50) {
+        this.state.data[e-1].count = 0;
+      }
+
+      console.log(this.state.data[e-1].count)
          
-      this.setState({ count: (curCount += nexCount) });
+      this.setState({ count: (this.state.data[e-1].count += nexCount) });
     });
   }
 
