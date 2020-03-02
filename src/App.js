@@ -25,12 +25,15 @@ class App extends Component {
       experimentStatus: ""
     };
   }
-
 render() {
   return (
     <div>
+      <h1>
+          Welcome to OptiQit
+       </h1>
       <BrowserRouter>
-        <div>
+        <div class = "center-screen">
+        
           <Switch>
             <Route exact path="/" component={ExperimentList} />
             <Route path="/experimentA" component = {ExperimentA}/>
@@ -40,8 +43,12 @@ render() {
         </div>
       </BrowserRouter>
     </div>
+
   );
+
 }
+
 }
 
 export default App;
+
