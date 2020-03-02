@@ -57,16 +57,6 @@ export class Control extends Component {
     }
     console.log("> " + a.join(" "));
   }
-
-  callAPI() {
-    fetch("http://localhost:9000/testAPI")
-      .then(res => res.text())
-      .then(res => this.setState({ apiResponse: res }));
-  }
-
-  componentWillMount() {
-    this.callAPI();
-  }
   // onChangeHandler(value) {
   //   const r = Number(value.rgb.r).toString(16);
   //   const g = Number(value.rgb.g).toString(16);
