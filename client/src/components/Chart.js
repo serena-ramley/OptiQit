@@ -95,7 +95,7 @@ class Chart extends React.Component {
         this.state.data[e-1].count = 0;
       }
 
-      console.log(this.state.data[e-1].count)
+      console.log(this.state.data[e-1].count) 
          
       this.setState({ count: (this.state.data[e-1].count += nexCount) });
     });
