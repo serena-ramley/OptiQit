@@ -5,9 +5,9 @@ import { Experiment } from "./components/experiments/Experiment";
 import { render } from "@testing-library/react";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
-import { ExperimentA } from "./components/Experiment";
-import { ExperimentB } from "./components/Experiment";
-import { ExperimentC } from "./components/Experiment";
+import { ExperimentA } from "./components/experiments/Experiment";
+import { ExperimentB } from "./components/experiments/Experiment";
+import { ExperimentC } from "./components/experiments/Experiment";
 
 
 

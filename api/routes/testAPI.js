@@ -23,14 +23,14 @@ function increment() {
   data[num].count += 20;
 }
 
-function updateCount() {
-  setInterval(() => {
-    increment();
-    pusher.trigger("poll-channel", "update-poll", {
-      poll
-    });
-  }, 1000);
-}
+// function updateCount() {
+//   setInterval(() => {
+//     increment();
+//     pusher.trigger("poll-channel", "update-poll", {
+//       poll
+//     });
+//   }, 1000);
+// }
 
 router.get("/", function(req, res, next) {
   res.json(data);

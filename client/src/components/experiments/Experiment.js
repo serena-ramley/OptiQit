@@ -5,11 +5,11 @@ import { Instructions } from "../Instructions";
 import { Control } from "../Control";
 import { Results } from "../Results";
 
-import { InstructionsA } from "./Instructions";
-import { InstructionsC } from "./Instructions";
+import { InstructionsA } from "../Instructions";
+import { InstructionsC } from "../Instructions";
 
-import { ResultsA } from "./Results";
-import { ResultsC } from "./Results";
+import { ResultsA } from "../Results";
+import { ResultsC } from "../Results";
 
 
 
@@ -30,7 +30,7 @@ export const Experiment = () => (
 export const ExperimentA = () => (
 
   <React.Fragment>
-    <p> Hello </p>
+    <NavigationBar />
     <InstructionsA />
     <ResultsA />
   </React.Fragment>
@@ -39,7 +39,7 @@ export const ExperimentA = () => (
 export const ExperimentB = () => (
 
   <React.Fragment>
-    <p>Coming to an OpticQit near you</p>
+    <h1>Coming to an OpticQit near you</h1>
   </React.Fragment>
 );
 
