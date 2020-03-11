@@ -32,7 +32,7 @@ render() {
           Welcome to OptiQit
        </h1>
       <BrowserRouter>
-        <div class = "center-screen">
+        <div className = "center-screen">
         
           <Switch>
             <Route exact path="/" component={ExperimentList} />

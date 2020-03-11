@@ -5,7 +5,6 @@ import { Nav, Col, Row, Image } from "react-bootstrap";
 import ExperimentA from "./beamsplitter.png";
 import ExperimentB from "./twoslit.jpg";
 import ExperimentC from "./twoslitphotons.png";
-import "./App.css";
 
 class ExperimentList extends React.Component {
   render() {
