@@ -9,6 +9,7 @@ import ExperimentC from "../../images/twoslitphotons.png";
 class ExperimentList extends React.Component {
   render() {
     return (
+      
       <MDBContainer className="d-flex justify-content-around">
         <MDBRow>
           <MDBCol md="4">
