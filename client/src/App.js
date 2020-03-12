@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import BlankComponent from "./BlankComponent";
-import ExperimentList from "./ExperimentList";
-import { Experiment } from "./components/Experiment";
+import BlankComponent from "./components/BlankComponent";
+import ExperimentList from "./components/experiments/ExperimentList";
+import { Experiment } from "./components/experiments/Experiment";
 import { render } from "@testing-library/react";
 import { NavigationBar } from "./components/NavigationBar";
 import { Instructions } from "./components/Instructions";
@@ -10,9 +10,9 @@ import { Control } from "./components/Control";
 import { Results } from "./components/Results";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
-import { ExperimentA } from "./components/Experiment";
-import { ExperimentB } from "./components/Experiment";
-import { ExperimentC } from "./components/Experiment";
+import { ExperimentA } from "./components/experiments/Experiment";
+import { ExperimentB } from "./components/experiments/Experiment";
+import { ExperimentC } from "./components/experiments/Experiment";
 
 class App extends Component {
   constructor() {
