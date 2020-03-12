@@ -39,7 +39,7 @@ export const ExperimentA = () => (
 export const ExperimentB = () => (
 
   <React.Fragment>
-    <h1>Coming to an OpticQit near you</h1>
+    <h1>Coming to an OptiQit near you</h1>
   </React.Fragment>
 );
 
