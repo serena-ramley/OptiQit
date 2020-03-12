@@ -4,15 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Navigate to the client folder, install all packages and start:
 
-  cd client
-  npm install --save
-  npm start
+    cd client
+    npm install --save
+    npm start
   
 Navigate to the api folder, install all packages and start:
 
-  cd api
-  npm install --save
-  npm start
+    cd api
+    npm install --save
+    npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
 
