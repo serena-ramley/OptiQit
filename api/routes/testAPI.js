@@ -20,7 +20,7 @@ function getRandomNumber(min, max) {
 
 function increment() {
   const num = getRandomNumber(0, data.length);
-  data[num].count += 20;
+  data[num].count += 2;
 }
 
 // function updateCount() {
