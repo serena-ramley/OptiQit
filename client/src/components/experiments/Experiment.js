@@ -1,28 +1,24 @@
 import React, { Component } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { NavigationBar } from "../NavigationBar";
+import { NavigationBarWithControl, NavigationBarWithoutControl } from "../NavigationBar";
 import { Instructions } from "../Instructions";
 import { Control } from "../Control";
 import { Results } from "../Results";
 
-import { InstructionsA } from "../Instructions";
-import { InstructionsC } from "../Instructions";
+import { InstructionsDoubleSlit } from "../Instructions";
+import { InstructionsLowPhotonDoubleSlit } from "../Instructions";
 
-import { ResultsA } from "../Results";
-import { ResultsC } from "../Results";
-
-
-
-
+import { ResultsDoubleSlit } from "../Results";
+import { ResultsLowPhotonDoubleSlit } from "../Results";
 
 
 export const Experiment = () => (
 
   <React.Fragment>
-    <NavigationBar />
+    <NavigationBarWithoutControl />
     <p> Hello </p>
     <Instructions />
-    <Control />
+    <Control/>
     <Results />
   </React.Fragment>
 );
@@ -30,19 +26,19 @@ export const Experiment = () => (
 export const doubleSlitExperiment = () => (
 
   <React.Fragment>
-    <NavigationBar />
-    <InstructionsA />
-    <ResultsA />
+    <NavigationBarWithoutControl />
+    <InstructionsDoubleSlit />
+    <ResultsDoubleSlit />
   </React.Fragment>
 );
 
 export const lowPhotonDoubleSlitExperiment = () => (
 
   <React.Fragment>
-  <NavigationBar />
-  <InstructionsC />
+  <NavigationBarWithControl />
+  <InstructionsLowPhotonDoubleSlit />
   <Control />
-  <ResultsC />
+  <ResultsLowPhotonDoubleSlit />
   </React.Fragment>
 
 );
