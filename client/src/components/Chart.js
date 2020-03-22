@@ -87,7 +87,7 @@ class Chart extends React.Component {
       data.forEach(function(d) {
         if(d.position == e) {
           nexCount = d.count
-          console.log(nexCount)
+          //console.log(nexCount)
         }
       })
 
@@ -97,7 +97,7 @@ class Chart extends React.Component {
 
       console.log(this.state.data[e-1].count) 
          
-      this.setState({ count: (this.state.data[e-1].count += nexCount) });
+      this.setState({ count: (this.state.data[e-1].count = nexCount) });
     });
   }
 

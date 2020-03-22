@@ -30,6 +30,11 @@ function getRandomNumber(min, max) {
 
 function increment() {
   const num = getRandomNumber(0, data.length);
+  //data[num].count = 0;
+  if (data[num].count >= 50) {
+    data[num].count = 0;
+  }
+
   data[num].count += 1;
 }
 
