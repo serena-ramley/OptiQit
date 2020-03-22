@@ -10,9 +10,9 @@ import { Control } from "./components/Control";
 import { Results } from "./components/Results";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
-import { ExperimentA } from "./components/experiments/Experiment";
-import { ExperimentB } from "./components/experiments/Experiment";
-import { ExperimentC } from "./components/experiments/Experiment";
+import { doubleSlitExperiment } from "./components/experiments/Experiment";
+import { lowPhotonDoubleSlitExperiment } from "./components/experiments/Experiment";
+import { beamSplitterExperiment } from "./components/experiments/Experiment";
 
 class App extends Component {
   constructor() {
@@ -30,9 +30,9 @@ class App extends Component {
           <div className="center-screen">
             <Switch>
               <Route exact path="/" component={ExperimentList} />
-              <Route path="/doubleSlit" component={ExperimentA} />
-              <Route path="/lowPhotonDoubleSlit" component={ExperimentB} />
-              <Route path="/beamSplitter" component={ExperimentC} />
+              <Route path="/doubleSlit" component={doubleSlitExperiment} />
+              <Route path="/lowPhotonDoubleSlit" component={lowPhotonDoubleSlitExperiment} />
+              <Route path="/beamSplitter" component={beamSplitterExperiment} />
             </Switch>
           </div>
         </BrowserRouter>

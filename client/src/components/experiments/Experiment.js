@@ -27,7 +27,7 @@ export const Experiment = () => (
   </React.Fragment>
 );
 
-export const ExperimentA = () => (
+export const doubleSlitExperiment = () => (
 
   <React.Fragment>
     <NavigationBar />
@@ -36,7 +36,7 @@ export const ExperimentA = () => (
   </React.Fragment>
 );
 
-export const ExperimentB = () => (
+export const lowPhotonDoubleSlitExperiment = () => (
 
   <React.Fragment>
   <NavigationBar />
@@ -48,7 +48,7 @@ export const ExperimentB = () => (
 );
 
 
-export const ExperimentC = () => (
+export const beamSplitterExperiment = () => (
 
   <React.Fragment>
   <h1>Coming soon to an OptiQit near you</h1>
