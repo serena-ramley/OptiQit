@@ -163,7 +163,9 @@ export class Control extends Component {
     return (
       <div>
         <h1 id="control">Control</h1>
-        <p>Testing paragraph</p>
+        <p>Select "Connect", then "Pair" with OptiQit</p>
+        <p>After connecting, press "Start" when you are ready to begin measurements</p>
+        <p>You can press "Pause/Resume" or "Stop" at anytime. Otherwise, OptiQit will stop automatically once the experiment is complete</p>
 
         <p>{this.state.apiResponse}</p>
 
