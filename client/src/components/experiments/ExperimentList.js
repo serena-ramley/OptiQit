@@ -2,9 +2,9 @@ import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import ExperimentIcon from "./ExperimentIcon";
 import { Nav, Col, Row, Image } from "react-bootstrap";
-import ExperimentA from "../../images/beamsplitter.png";
-import ExperimentB from "../../images/twoslit.jpg";
-import ExperimentC from "../../images/twoslitphotons.png";
+import beamSplitterImage from "../../images/beamsplitter.png";
+import doubleSlitImage from "../../images/twoslit.jpg";
+import lowPhotonDoubleSlitImage from "../../images/twoslitphotons.png";
 
 class ExperimentList extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class ExperimentList extends React.Component {
               <Nav.Link href=" /doubleSlit">
                 <MDBView hover>
                   <img
-                    src={ExperimentB}
+                    src={doubleSlitImage}
                     className="img-fluid rounded-circle hoverable"
                     alt=""
                   />
@@ -36,7 +36,7 @@ class ExperimentList extends React.Component {
               <Nav.Link href=" /lowPhotonDoubleSlit">
                 <MDBView hover>
                   <img
-                    src={ExperimentC}
+                    src={lowPhotonDoubleSlitImage}
                     className="img-fluid rounded-circle hoverable"
                     alt=""
                   />
@@ -55,7 +55,7 @@ class ExperimentList extends React.Component {
               <Nav.Link href="/beamSplitter">
                 <MDBView hover>
                   <img
-                    src={ExperimentA}
+                    src={beamSplitterImage}
                     className="img-fluid rounded-circle hoverable"
                     alt=""
                   />
