@@ -39,18 +39,19 @@ export const ExperimentA = () => (
 export const ExperimentB = () => (
 
   <React.Fragment>
-    <h1>Coming to an OptiQit near you</h1>
+  <NavigationBar />
+  <InstructionsC />
+  <Control />
+  <ResultsC />
   </React.Fragment>
+
 );
 
 
 export const ExperimentC = () => (
 
   <React.Fragment>
-    <NavigationBar />
-    <InstructionsC />
-    <Control />
-    <ResultsC />
+  <h1>Coming soon to an OptiQit near you</h1>
   </React.Fragment>
 );
 
