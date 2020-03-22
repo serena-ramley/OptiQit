@@ -14,26 +14,6 @@ class ExperimentList extends React.Component {
         <MDBRow>
           <MDBCol md="4">
             <Nav>
-              <Nav.Link href="/experimentA">
-                <MDBView hover>
-                  <img
-                    src={ExperimentA}
-                    className="img-fluid rounded-circle hoverable"
-                    alt=""
-                  />
-                  <MDBMask
-                    className="flex-center rounded-circle"
-                    overlay="red-strong"
-                  >
-                    <p className="white-text">Experiment A</p>
-                  </MDBMask>
-                </MDBView>
-              </Nav.Link>
-            </Nav>
-          </MDBCol>
-
-          <MDBCol md="4">
-            <Nav>
               <Nav.Link href=" /experimentB">
                 <MDBView hover>
                   <img
@@ -65,6 +45,25 @@ class ExperimentList extends React.Component {
                     overlay="red-strong"
                   >
                     <p className="white-text">Experiment C</p>
+                  </MDBMask>
+                </MDBView>
+              </Nav.Link>
+            </Nav>
+          </MDBCol>
+          <MDBCol md="4">
+            <Nav>
+              <Nav.Link href="/experimentA">
+                <MDBView hover>
+                  <img
+                    src={ExperimentA}
+                    className="img-fluid rounded-circle hoverable"
+                    alt=""
+                  />
+                  <MDBMask
+                    className="flex-center rounded-circle"
+                    overlay="red-strong"
+                  >
+                    <p className="white-text">Experiment A</p>
                   </MDBMask>
                 </MDBView>
               </Nav.Link>
