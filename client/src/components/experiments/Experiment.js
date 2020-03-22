@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { NavigationBarWithControl, NavigationBarWithoutControl } from "../NavigationBar";
+import { NavigationBarWithControl, NavigationBarWithoutControl, NavigationBarHome } from "../NavigationBar";
 import { Instructions } from "../Instructions";
 import { Control } from "../Control";
 import { Results } from "../Results";
@@ -47,6 +47,7 @@ export const lowPhotonDoubleSlitExperiment = () => (
 export const beamSplitterExperiment = () => (
 
   <React.Fragment>
+  <NavigationBarHome />
   <h1>Coming soon to an OptiQit near you</h1>
   </React.Fragment>
 );
