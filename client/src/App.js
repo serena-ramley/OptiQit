@@ -30,9 +30,9 @@ class App extends Component {
           <div className="center-screen">
             <Switch>
               <Route exact path="/" component={ExperimentList} />
-              <Route path="/experimentA" component={ExperimentA} />
-              <Route path="/experimentB" component={ExperimentB} />
-              <Route path="/experimentC" component={ExperimentC} />
+              <Route path="/doubleSlit" component={ExperimentA} />
+              <Route path="/lowPhotonDoubleSlit" component={ExperimentB} />
+              <Route path="/beamSplitter" component={ExperimentC} />
             </Switch>
           </div>
         </BrowserRouter>

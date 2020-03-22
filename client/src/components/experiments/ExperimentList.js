@@ -14,7 +14,7 @@ class ExperimentList extends React.Component {
         <MDBRow>
           <MDBCol md="4">
             <Nav>
-              <Nav.Link href=" /experimentB">
+              <Nav.Link href=" /doubleSlit">
                 <MDBView hover>
                   <img
                     src={ExperimentB}
@@ -25,7 +25,7 @@ class ExperimentList extends React.Component {
                     className="flex-center rounded-circle"
                     overlay="red-strong"
                   >
-                    <p className="white-text">Experiment B</p>
+                    <p className="white-text">Double Slit</p>
                   </MDBMask>
                 </MDBView>
               </Nav.Link>
@@ -33,7 +33,7 @@ class ExperimentList extends React.Component {
           </MDBCol>
           <MDBCol>
             <Nav>
-              <Nav.Link href=" /experimentC">
+              <Nav.Link href=" /lowPhotonDoubleSlit">
                 <MDBView hover>
                   <img
                     src={ExperimentC}
@@ -44,7 +44,7 @@ class ExperimentList extends React.Component {
                     className="rounded-circle flex-center"
                     overlay="red-strong"
                   >
-                    <p className="white-text">Experiment C</p>
+                    <p className="white-text">Double Slit with Low Number Photons</p>
                   </MDBMask>
                 </MDBView>
               </Nav.Link>
@@ -52,7 +52,7 @@ class ExperimentList extends React.Component {
           </MDBCol>
           <MDBCol md="4">
             <Nav>
-              <Nav.Link href="/experimentA">
+              <Nav.Link href="/beamSplitter">
                 <MDBView hover>
                   <img
                     src={ExperimentA}
@@ -63,7 +63,7 @@ class ExperimentList extends React.Component {
                     className="flex-center rounded-circle"
                     overlay="red-strong"
                   >
-                    <p className="white-text">Experiment A</p>
+                    <p className="white-text">Beam Splitter</p>
                   </MDBMask>
                 </MDBView>
               </Nav.Link>
