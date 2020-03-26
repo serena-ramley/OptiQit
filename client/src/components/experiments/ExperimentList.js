@@ -2,9 +2,9 @@ import React from "react";
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import ExperimentIcon from "./ExperimentIcon";
 import { Nav, Col, Row, Image } from "react-bootstrap";
-import ExperimentA from "../../images/beamsplitter.png";
-import ExperimentB from "../../images/twoslit.jpg";
-import ExperimentC from "../../images/twoslitphotons.png";
+import beamSplitterImage from "../../images/beamsplitter.png";
+import doubleSlitImage from "../../images/twoslit.jpg";
+import lowPhotonDoubleSlitImage from "../../images/twoslitphotons.png";
 
 class ExperimentList extends React.Component {
   render() {
@@ -14,10 +14,10 @@ class ExperimentList extends React.Component {
         <MDBRow>
           <MDBCol md="4">
             <Nav>
-              <Nav.Link href="/experimentA">
+              <Nav.Link href=" /doubleSlit">
                 <MDBView hover>
                   <img
-                    src={ExperimentA}
+                    src={doubleSlitImage}
                     className="img-fluid rounded-circle hoverable"
                     alt=""
                   />
@@ -25,27 +25,7 @@ class ExperimentList extends React.Component {
                     className="flex-center rounded-circle"
                     overlay="red-strong"
                   >
-                    <p className="white-text">Experiment A</p>
-                  </MDBMask>
-                </MDBView>
-              </Nav.Link>
-            </Nav>
-          </MDBCol>
-
-          <MDBCol md="4">
-            <Nav>
-              <Nav.Link href=" /experimentB">
-                <MDBView hover>
-                  <img
-                    src={ExperimentB}
-                    className="img-fluid rounded-circle hoverable"
-                    alt=""
-                  />
-                  <MDBMask
-                    className="flex-center rounded-circle"
-                    overlay="red-strong"
-                  >
-                    <p className="white-text">Experiment B</p>
+                    <p className="white-text">Double Slit</p>
                   </MDBMask>
                 </MDBView>
               </Nav.Link>
@@ -53,10 +33,10 @@ class ExperimentList extends React.Component {
           </MDBCol>
           <MDBCol>
             <Nav>
-              <Nav.Link href=" /experimentC">
+              <Nav.Link href=" /lowPhotonDoubleSlit">
                 <MDBView hover>
                   <img
-                    src={ExperimentC}
+                    src={lowPhotonDoubleSlitImage}
                     className="img-fluid rounded-circle hoverable"
                     alt=""
                   />
@@ -64,7 +44,26 @@ class ExperimentList extends React.Component {
                     className="rounded-circle flex-center"
                     overlay="red-strong"
                   >
-                    <p className="white-text">Experiment C</p>
+                    <p className="white-text">Double Slit with Low Number Photons</p>
+                  </MDBMask>
+                </MDBView>
+              </Nav.Link>
+            </Nav>
+          </MDBCol>
+          <MDBCol md="4">
+            <Nav>
+              <Nav.Link href="/beamSplitter">
+                <MDBView hover>
+                  <img
+                    src={beamSplitterImage}
+                    className="img-fluid rounded-circle hoverable"
+                    alt=""
+                  />
+                  <MDBMask
+                    className="flex-center rounded-circle"
+                    overlay="red-strong"
+                  >
+                    <p className="white-text">Beam Splitter</p>
                   </MDBMask>
                 </MDBView>
               </Nav.Link>

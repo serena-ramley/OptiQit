@@ -1,56 +1,54 @@
 import React, { Component } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { NavigationBar } from "../NavigationBar";
+import { NavigationBarWithControl, NavigationBarWithoutControl, NavigationBarHome } from "../NavigationBar";
 import { Instructions } from "../Instructions";
 import { Control } from "../Control";
 import { Results } from "../Results";
 
-import { InstructionsA } from "../Instructions";
-import { InstructionsC } from "../Instructions";
+import { InstructionsDoubleSlit } from "../Instructions";
+import { InstructionsLowPhotonDoubleSlit } from "../Instructions";
 
-import { ResultsA } from "../Results";
-import { ResultsC } from "../Results";
-
-
-
-
+import { ResultsDoubleSlit } from "../Results";
+import { ResultsLowPhotonDoubleSlit } from "../Results";
 
 
 export const Experiment = () => (
 
   <React.Fragment>
-    <NavigationBar />
+    <NavigationBarWithoutControl />
     <p> Hello </p>
     <Instructions />
-    <Control />
+    <Control/>
     <Results />
   </React.Fragment>
 );
 
-export const ExperimentA = () => (
+export const doubleSlitExperiment = () => (
 
   <React.Fragment>
-    <NavigationBar />
-    <InstructionsA />
-    <ResultsA />
+    <NavigationBarWithoutControl />
+    <InstructionsDoubleSlit />
+    <ResultsDoubleSlit />
   </React.Fragment>
 );
 
-export const ExperimentB = () => (
+export const lowPhotonDoubleSlitExperiment = () => (
 
   <React.Fragment>
-    <h1>Coming to an OptiQit near you</h1>
+  <NavigationBarWithControl />
+  <InstructionsLowPhotonDoubleSlit />
+  <Control />
+  <ResultsLowPhotonDoubleSlit />
   </React.Fragment>
+
 );
 
 
-export const ExperimentC = () => (
+export const beamSplitterExperiment = () => (
 
   <React.Fragment>
-    <NavigationBar />
-    <InstructionsC />
-    <Control />
-    <ResultsC />
+  <NavigationBarHome />
+  <h1>Coming soon to an OptiQit near you</h1>
   </React.Fragment>
 );
 
