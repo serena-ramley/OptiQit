@@ -30,7 +30,7 @@ const BarChart = props => {
         data={props.data}
         x="position"
         y="count"
-        domain={{ y: [0, 50] }}
+        domain={{ y: [0, 5000] }}
         style={{
           data: { fill: props.fillColor }
         }}
@@ -91,7 +91,7 @@ class Chart extends React.Component {
         }
       })
 
-      if (this.state.data[e-1].count == null || this.state.data[e-1].count > 50) {
+      if (this.state.data[e-1].count == null || this.state.data[e-1].count > 5000) {
         this.state.data[e-1].count = 0;
       }
 
