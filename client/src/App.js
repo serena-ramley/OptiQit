@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { doubleSlitExperiment } from "./components/experiments/Experiment";
 import { lowPhotonDoubleSlitExperiment } from "./components/experiments/Experiment";
 import { beamSplitterExperiment } from "./components/experiments/Experiment";
+import { NotFound } from "./components/NotFound";
 
 class App extends Component {
   constructor() {
@@ -24,18 +25,16 @@ class App extends Component {
   }
   render() {
     return (
+      
       <div>
-        <h1>Welcome to OptiQit</h1>
-        <BrowserRouter>
-          <div className="center-screen">
+        //<div><h1>Welcome to OptiQit</h1></div>
+
             <Switch>
               <Route exact path="/" component={ExperimentList} />
-              <Route path="/doubleSlit" component={doubleSlitExperiment} />
-              <Route path="/lowPhotonDoubleSlit" component={lowPhotonDoubleSlitExperiment} />
-              <Route path="/beamSplitter" component={beamSplitterExperiment} />
+              <Route component={NotFound} />
             </Switch>
-          </div>
-        </BrowserRouter>
+ 
+
       </div>
     );
   }
