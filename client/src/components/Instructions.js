@@ -44,7 +44,6 @@ export const InstructionsDoubleSlit = () => (
 
 export const InstructionsLowPhotonDoubleSlit = () => (
   <div>
-    <h1>Low Photon Double Slit Experiment</h1>
     <h2 id="instructions">Instructions</h2>
     <p><i>Introduction </i></p>
     <p>
@@ -62,13 +61,13 @@ export const InstructionsLowPhotonDoubleSlit = () => (
       {" "}      
       Move the attenuators into the path of light.
     </p>
+    <div className="justify-content-center">
     <img
         src={withAttenuators}
         alt="Attenuators are moved into of the path of the laser"
         width="600"
       />
-      <p>
-      </p>
+    </div>
   </div>
 );
 

@@ -1,20 +1,20 @@
 .doubleSlit {
-  height: 100vh;
+  height: 105vh;
   width: 100vw;
-  background-color: #00A1F1;
+  background-color: #71c7ec;
   /* box-shadow: inset 100vw 0px 0px #00A1F1; */
 }
 
-.content {
+.dscontent {
   margin: 0px 100px 20px;
-  background-color: #71c7ec;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
-.header {
+.dsheader {
   padding: 10px;
   text-align: center;
-  background: #005073;
+  background: #00A1F1;
   color: white;
   font-size: 30px;
 }

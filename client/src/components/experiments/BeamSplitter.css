@@ -1,11 +1,19 @@
-/* .doubleSlit {
+.beamsplitter {
     height: 100vh;
     width: 100vw;
-    background-color: #40c0ff;
-     box-shadow: inset 100vw 0px 0px #00A1F1; 
-  } */
+    background-color: rgb(231, 137, 64);
+}
 
-/* .content {
+.bcontent {
     margin: 0px 100px 20px;
-    background-color: #00A1F1;
-} */
+    background-color: white;
+    color: black;
+}
+
+.bheader {
+    padding: 10px;
+    text-align: center;
+    background: #FE6E00;
+    color: white;
+    font-size: 30px;
+}

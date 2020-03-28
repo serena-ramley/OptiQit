@@ -10,7 +10,7 @@ const BarChart = props => {
   return (
     <VictoryChart
       theme={VictoryTheme.material}
-      style={{ parent: { maxWidth: "50%" } }}
+      style={{ parent: { maxWidth: "80%" } }}
       domainPadding={10}
     >
       <VictoryAxis

@@ -13,10 +13,10 @@ class DoubleSlit extends React.Component{
       return(
         <div class="doubleSlit">
           <NavigationBarWithoutControl />
-          <div class="header">
+          <div class="dsheader">
             <h1>Double Slit Experiment</h1>
           </div>
-          <div class="content">
+          <div class="dscontent">
             <InstructionsDoubleSlit />          
             <ResultsDoubleSlit />
           </div>
