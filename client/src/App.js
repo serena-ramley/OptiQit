@@ -1,19 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
-import BlankComponent from "./components/BlankComponent";
 import ExperimentList from "./components/experiments/ExperimentList";
-import { Experiment } from "./components/experiments/Experiment";
-import { render } from "@testing-library/react";
-import { NavigationBar } from "./components/NavigationBar";
-import { Instructions } from "./components/Instructions";
-import { Control } from "./components/Control";
-import { Results } from "./components/Results";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
-import { doubleSlitExperiment } from "./components/experiments/Experiment";
-import { lowPhotonDoubleSlitExperiment } from "./components/experiments/Experiment";
-import { beamSplitterExperiment } from "./components/experiments/Experiment";
-import { NotFound } from "./components/NotFound";
+import DoubleSlit from "./components/experiments/DoubleSlit";
+import LowPhotonDoubleSlit from "./components/experiments/LowPhotonDoubleSlit";
+import BeamSplitter from "./components/experiments/BeamSplitter";
 
 class App extends Component {
   constructor() {
@@ -26,15 +18,15 @@ class App extends Component {
   render() {
     return (
       
-      <div>
-        //<div><h1>Welcome to OptiQit</h1></div>
-
+      <div class="page">
+        <BrowserRouter>
             <Switch>
               <Route exact path="/" component={ExperimentList} />
-              <Route component={NotFound} />
+              <Route path="/doubleSlit" component={DoubleSlit} />
+              <Route path="/lowPhotonDoubleSlit" component={LowPhotonDoubleSlit} />
+              <Route path="/beamSplitter" component={BeamSplitter} />
             </Switch>
- 
-
+        </BrowserRouter>
       </div>
     );
   }

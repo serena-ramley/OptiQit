@@ -17,7 +17,6 @@ export const Instructions = () => (
 
 export const InstructionsDoubleSlit = () => (
   <div>
-    <h1>Double Slit Experiment</h1>
     <h2 id="instructions">Instructions</h2>
     <p><i>Introduction</i></p>
     <p>

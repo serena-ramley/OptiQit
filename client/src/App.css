@@ -1,43 +1,19 @@
-.App {
-  text-align: center;
-  background-size: unset;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
+
 
 body {
-  background-color: black !important;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: inset 33.33vw 0px 0px #00A1F1, inset 66.66vw 0px 0px #7CBB00, inset 99.99vw 0px 0px  #F65314;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: white;
-  text-align: center;
-}
-
-h2 {
-  color: white;
-  text-align: center;
-}
-
-p {
-  color: white;
-  text-align: center;
-}
-
-div {
-  white-space: pre-wrap;
-  
-}
-
-.center-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 80vh;
-}
-
-.experimentContainer {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}

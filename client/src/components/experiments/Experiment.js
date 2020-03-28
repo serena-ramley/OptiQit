@@ -13,7 +13,6 @@ import { ResultsLowPhotonDoubleSlit } from "../Results";
 
 
 export const Experiment = () => (
-
   <React.Fragment>
     <NavigationBarWithoutControl />
     <p> Hello </p>
@@ -23,34 +22,10 @@ export const Experiment = () => (
   </React.Fragment>
 );
 
-export const doubleSlitExperiment = () => (
-
-  <React.Fragment>
-    <NavigationBarWithoutControl />
-    <InstructionsDoubleSlit />
-    <ResultsDoubleSlit />
-  </React.Fragment>
-);
-
-export const lowPhotonDoubleSlitExperiment = () => (
-
-  <React.Fragment>
-  <NavigationBarWithControl />
-  <InstructionsLowPhotonDoubleSlit />
-  <Control />
-  <ResultsLowPhotonDoubleSlit />
-  </React.Fragment>
-
-);
 
 
-export const beamSplitterExperiment = () => (
 
-  <React.Fragment>
-  <NavigationBarHome />
-  <h1>Coming soon to an OptiQit near you</h1>
-  </React.Fragment>
-);
+
 
 
 

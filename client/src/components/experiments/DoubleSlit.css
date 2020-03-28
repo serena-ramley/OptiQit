@@ -1,0 +1,20 @@
+.doubleSlit {
+  height: 100vh;
+  width: 100vw;
+  background-color: #00A1F1;
+  /* box-shadow: inset 100vw 0px 0px #00A1F1; */
+}
+
+.content {
+  margin: 0px 100px 20px;
+  background-color: #71c7ec;
+  color: white;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #005073;
+  color: white;
+  font-size: 30px;
+}
