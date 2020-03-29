@@ -1,12 +1,11 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
 import './Instructions.css'; 
 import noAttenuators from "../images/noattenuators.png";
 import withAttenuators from "../images/withattenuators.png";
 
 export const Instructions = () => (
-  <div>
-    <h1 id="instructions">Instructions</h1>
+  <div id="instructions">
+    <h1 >Instructions</h1>
     <p>
       {" "}
       Enter instructions here
@@ -16,58 +15,140 @@ export const Instructions = () => (
 
 
 export const InstructionsDoubleSlit = () => (
-  <div>
-    <h2 id="instructions">Instructions</h2>
-    <p><i>Introduction</i></p>
-    <p>
-      {" "}
-      When a beam of light reaches a "beam splitter", the light can either be transmitted (go through) or be reflected (bounce back).
-      If the beam of light is aligned at 45 degrees with respect to the beam splitter,
-      then it will be equally likely for each particle of light to be transmitted or reflected.
-    </p>
-    <p><i>Instructions</i></p>
-    <p>
-      {" "}      
-      Move the attenuators out of the path of light.
-    </p>
-    <img
-        src={noAttenuators}
-        alt="Attenuators are moved outside of the path of the laser"
-        width="600"
-      />
-      <p>
-      </p>
+  <div id="instructions" style={{margin: "20px 0px 0px"}}>
+    <h2 >Instructions</h2>
+        <ul class="stepper stepper-vertical" style={{margin: "0px 0px 0px"}}>
+
+          <li class="active">
+            <a href="#!">
+              <span class="circle">1</span>
+              <span class="label">First step</span>
+            </a>
+            <div class="step-content grey lighten-3">
+              <p>
+                {" "}      
+                Ensure OptiQit is plugged into a wall outlet.
+              </p>
+            </div>
+          </li>
+
+          <li class="active">
+            <a href="#!">
+              <span class="circle">2</span>
+              <span class="label">Second step</span>
+            </a>
+            <div class="step-content grey lighten-3">
+              <p>
+                {" "}      
+                Open the optical box lid and move the attenuators out of the path of light.
+              </p>
+              <img
+                  src={noAttenuators}
+                  alt="Attenuators are moved outside of the path of the laser"
+                  width="600"
+                  class="centre"
+              />
+            </div>
+          </li>
+
+          <li class="active">
+            <a href="#!">
+              <span class="circle">3</span>
+              <span class="label">Third step</span>
+            </a>
+            <div class="step-content grey lighten-3">
+              <p>
+                {" "}      
+                Close the optical box lid.
+              </p>
+            </div>
+          </li>
+
+          <li class="active">
+            <a href="#!">
+              <span class="circle">4</span>
+              <span class="label">Fourth step</span>
+            </a>
+            <div class="step-content grey lighten-3">
+              <p>
+                {" "}      
+                Open the viewport and view the display screen.
+              </p>
+            </div>
+          </li>
+
+        </ul>
   </div>
 );
 
-
-
 export const InstructionsLowPhotonDoubleSlit = () => (
-  <div>
-    <h2 id="instructions">Instructions</h2>
-    <p><i>Introduction </i></p>
-    <p>
-      {" "}      
-      What is a photon? Light that you see from a light bulb or from the sun is believed
-      to be made up of many "photons" or particles of light.
-      Light behaves both as a particle and as a wave. When you place two slits in front of a beam of light (made up of many photons),
-      what do you think determines which way each particle will go? What happens when the photons bump into each other?
-      Here we will try the "double slit experiment" with a small number of photons - there is light, but there is so little light that your eyes can't detect it!
-      However, the electronic single photon detector will absorb photons and convert light energy to electrical energy.
-      OptiQit will report how many photons are detected in a short time interval at each position.
-    </p>
-    <p><i>Instructions</i></p>
-    <p>
-      {" "}      
-      Move the attenuators into the path of light.
-    </p>
-    <div className="justify-content-center">
-    <img
-        src={withAttenuators}
-        alt="Attenuators are moved into of the path of the laser"
-        width="600"
-      />
-    </div>
+  <div id="instructions" style={{margin: "20px 0px 0px"}}>
+    <h2 >Instructions</h2>
+
+        <ul class="stepper stepper-vertical" style={{margin: "0px 0px 0px"}}>
+
+          <li class="active">
+            <a href="#!">
+              <span class="circle">1</span>
+              <span class="label">First step</span>
+            </a>
+            <div class="step-content grey lighten-3">
+              <p>
+                {" "}      
+                Ensure OptiQit is plugged into a wall outlet.
+              </p>
+            </div>
+          </li>
+
+          <li class="active">
+            <a href="#!">
+              <span class="circle">2</span>
+              <span class="label">Second step</span>
+            </a>
+            <div class="step-content grey lighten-3">
+              <p>
+                {" "}      
+                Open the optical box lid and move the attenuators into of the path of light.
+              </p>
+              <img
+                src={withAttenuators}
+                alt="Attenuators are moved into of the path of the laser"
+                width="600"
+                class="centre"
+              />
+            </div>
+          </li>
+
+          <li class="active">
+            <a href="#!">
+              <span class="circle">3</span>
+              <span class="label">Third step</span>
+            </a>
+            <div class="step-content grey lighten-3">
+              <p>
+                {" "}      
+                Click "Connect" followed by "Start" in the Control section below.
+              </p>
+            </div>
+          </li>
+
+          <li class="active">
+            <a href="#!">
+              <span class="circle">4</span>
+              <span class="label">Fourth step</span>
+            </a>
+            <div class="step-content grey lighten-3">
+              <p>
+                {" "}      
+                Observe the results graph below.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+
+
   </div>
 );
 

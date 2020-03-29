@@ -10,7 +10,8 @@ const BarChart = props => {
   return (
     <VictoryChart
       theme={VictoryTheme.material}
-      style={{ parent: { maxWidth: "80%" } }}
+      padding={{ top: 0, bottom: 50, left: 60, right: 40 }}
+      style={{ parent: { maxWidth: "50%" } }}
       domainPadding={10}
     >
       <VictoryAxis
@@ -23,7 +24,7 @@ const BarChart = props => {
         dependentAxis
         label="Count"
         style={{
-          axisLabel: { padding: 30 }
+          axisLabel: { padding: 40 }
         }}
       />
       <VictoryBar
@@ -39,8 +40,6 @@ const BarChart = props => {
     </VictoryChart>
   );
 };
-
-
 
 class Chart extends React.Component {
   state = {

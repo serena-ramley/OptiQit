@@ -4,7 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 export const Results = () => (
   <div>
-    <h1 id="results">Results</h1>
+    <h2 id="results">Results</h2>
     <p>
       {" "}
       Enter Results discussion here.
@@ -13,18 +13,22 @@ export const Results = () => (
 );
 
 export const ResultsDoubleSlit = () => (
-  <div>
-    <h1 id="results">Results</h1>
+  <div style={{margin: "20px 0px 0px"}}>
+    <h2 id="results">Results</h2>
     <p>
       {" "}
       What do you see?
+    </p>
+    <p>
+      {" "}
+      The <a href="/lowPhotonDoubleSlit">next experiment</a> deals with 
     </p>
   </div>
 );
 
 export const ResultsLowPhotonDoubleSlit = () => (
-  <div>
-    <h1 id="results">Results</h1>
+  <div style={{margin: "20px 0px 200px"}}>
+    <h2 id="results">Results</h2>
     <p>
       {" "}
       How do you interpret the graph?

@@ -161,8 +161,8 @@ export class Control extends Component {
 
   render() {
     return (
-      <div>
-        <h1 id="control">Control</h1>
+      <div style={{margin: "20px 0px 0px"}}>
+        <h2 id="control">Control</h2>
         <p>Select "Connect", then "Pair" with OptiQit</p>
         <p>After connecting, press "Start" when you are ready to begin measurements</p>
         <p>You can press "Pause/Resume" or "Stop" at anytime. Otherwise, OptiQit will stop automatically once the experiment is complete</p>
