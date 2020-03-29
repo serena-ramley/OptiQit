@@ -1,0 +1,20 @@
+.lowPhoton {
+    height: 340vh;
+    width: 100vw;
+    background-color: rgb(199, 255, 86);
+    /* box-shadow: inset 100vw 0px 0px #00A1F1; */
+}
+
+.lpcontent {
+    margin: 0px 100px 20px;
+    background-color: white;
+    color: black;
+}
+
+.lpheader {
+    padding: 10px;
+    text-align: center;
+    background: #7CBB00;
+    color: white;
+    font-size: 30px;
+}
