@@ -5,6 +5,7 @@ import { ResultsDoubleSlit } from "../Results";
 import "./DoubleSlit.css"
 import { IntroductionDoubleSlit } from "../Introduction";
 import { HypothesisDoubleSlit } from "../Hypothesis";
+import { ExplanationDoubleSlit } from "../Explanation";
 
 class DoubleSlit extends React.Component{
   render() {
@@ -19,6 +20,7 @@ class DoubleSlit extends React.Component{
             <HypothesisDoubleSlit/>
             <InstructionsDoubleSlit style={{margin: "0px 0px 200px"}}/>          
             <ResultsDoubleSlit />
+            <ExplanationDoubleSlit/> 
           </div>
         </div>
       );
