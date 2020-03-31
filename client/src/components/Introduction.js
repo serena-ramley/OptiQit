@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Introduction = () => (
-  <div id="introduction">
+  <div id="introduction" style={{margin: "20px 0px 0px"}}>
     <h1 >Introduction</h1>
     <p>
       {" "}
@@ -12,7 +12,7 @@ export const Introduction = () => (
 
 
 export const IntroductionDoubleSlit = () => (
-  <div id="introduction">
+  <div id="introduction" style={{margin: "20px 0px 0px"}}>
     <h2 >Introduction</h2>
     <p>
       {" "}
@@ -26,7 +26,7 @@ export const IntroductionDoubleSlit = () => (
 
 
 export const IntroductionsLowPhotonDoubleSlit = () => (
-  <div id="introductions">
+  <div id="introductions" style={{margin: "20px 0px 0px"}}>
     <h2 >Introduction</h2>
     <p>
       {" "}      
