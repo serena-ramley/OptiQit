@@ -6,6 +6,7 @@ import { ResultsLowPhotonDoubleSlit } from "../Results";
 import "./LowPhotonDoubleSlit.css"
 import { IntroductionsLowPhotonDoubleSlit } from "../Introduction";
 import { HypothesissLowPhotonDoubleSlit } from "../Hypothesis";
+import { ExplanationLowPhotonDoubleSlit} from "../Explanation";
 
 class lowPhotonDoubleSlit extends React.Component{
     render() {
@@ -21,6 +22,7 @@ class lowPhotonDoubleSlit extends React.Component{
                     <InstructionsLowPhotonDoubleSlit />
                     <Control />
                     <ResultsLowPhotonDoubleSlit />
+                    <ExplanationLowPhotonDoubleSlit />
                 </div>
             </div>
         );
